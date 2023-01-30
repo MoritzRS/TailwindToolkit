@@ -1,0 +1,23 @@
+{
+	"name": "tailwindtoolkit",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/index.js",
+	"scripts": {
+		"docs:install": "cd docs && npm install",
+		"docs:dev": "cd docs && npm run dev",
+		"docs:build": "cd docs && npm run build",
+		"docs:preview": "cd docs && npm run preview"
+	},
+	"keywords": [],
+	"author": "MoritzRS",
+	"license": "ISC",
+	"devDependencies": {
+		"prettier": "^2.8.3",
+		"prettier-plugin-svelte": "^2.9.0",
+		"prettier-plugin-tailwindcss": "^0.1.13"
+	},
+	"dependencies": {
+		"tailwindcss": "^3.2.4"
+	}
+}
