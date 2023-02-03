@@ -5,9 +5,13 @@ export function themeColors(config: Configuration) {
 	for (let color in config.colors) {
 		for (let shade in config.colors[color]) {
 			const key = `${color}-${shade}`;
-			colors[key] = `hsl(var(--${key}) / <alpha-value>)`;
+			const hsl = config.colors[color][shade]
+				.hsl()
+				.map((e) => Math.round(e))
+				.map((e, i) => (i == 0 ? e : `${e}%`))
+				.join(" ");
+			colors[key] = `hsl(${hsl} / <alpha-value>)`;
 		}
 	}
-	console.log(colors);
 	return colors;
 }

@@ -15,6 +15,16 @@ export const content: Category[] = [
 		pages: [],
 	},
 	{
+		name: "Theming",
+		pages: [
+			{
+				name: "Colors",
+				href: "/theming/colors",
+				tags: ["color", "them"],
+			},
+		],
+	},
+	{
 		name: "Utilities",
 		pages: [],
 	},
