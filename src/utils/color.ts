@@ -95,6 +95,34 @@ export class Color {
 	}
 
 	/**
+	 * Creates Color Shades by applying base color shades
+	 * @param color Base Color
+	 * @param lighter Amount of lighter shades
+	 * @param darker Amount of darker shades
+	 */
+	public static shade(color: Color, lighter: number, darker: number) {
+		const [h, s, l] = color.hsl();
+		const stepsLight = (90 - l) / lighter;
+		const stepsDark = (l - 10) / (darker + 1);
+
+		const light = Array(lighter)
+			.fill(0)
+			.map((_, i) => {
+				const lightness = l + (i + 1) * stepsLight;
+				return Color.fromHSL(h, s, lightness);
+			});
+
+		const dark = Array(darker)
+			.fill(0)
+			.map((_, i) => {
+				const lightness = l - (darker - i) * stepsDark;
+				return Color.fromHSL(h, s, lightness);
+			});
+
+		return [...dark, color, ...light];
+	}
+
+	/**
 	 * Generates complementary Colors
 	 * @param color Base Color
 	 */

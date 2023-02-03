@@ -16,12 +16,12 @@ export function parser(config: UserConfig): Configuration {
 		success: "hsl(158 64% 52%)",
 		warning: "hsl(43 96% 56%)",
 		error: "hsl(0 91% 71%)",
-		basis: "hsl(0 0% 100%)",
+		basis: "hsl(215 16% 47%)",
 		...(config.colors ?? {}),
 	};
 	for (let key in baseColors) {
 		const color = Color.fromCSS(baseColors[key]);
-		const shades: ColorShades = Color.shades(color, 10)
+		const shades: ColorShades = Color.shade(color, 5, 4)
 			.reverse()
 			.map((color, i) => ({
 				[i == 0 ? 50 : i * 100]: color,
