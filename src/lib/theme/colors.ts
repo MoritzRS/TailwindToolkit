@@ -1,4 +1,4 @@
-import { Configuration } from "../../config/types";
+import { Configuration } from "../../utils/types";
 
 export function themeColors(config: Configuration) {
 	const colors = {};
