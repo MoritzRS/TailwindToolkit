@@ -22,6 +22,11 @@ export const content: Category[] = [
 				href: "/theming/colors",
 				tags: ["color", "them"],
 			},
+			{
+				name: "Shadows",
+				href: "/theming/shadows",
+				tags: ["shadow", "them"],
+			},
 		],
 	},
 	{
