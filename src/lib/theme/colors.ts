@@ -13,5 +13,11 @@ export function themeColors(config: Configuration) {
 			colors[key] = `hsl(${hsl} / <alpha-value>)`;
 		}
 	}
-	return { ...colors, white: "#ffffff", black: "#000000" };
+	return {
+		...colors,
+		white: "#ffffff",
+		black: "#000000",
+		transparent: "transparent",
+		current: "currentColor",
+	};
 }
