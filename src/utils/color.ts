@@ -79,28 +79,12 @@ export class Color {
 	}
 
 	/**
-	 * Creates Color Shades
-	 * @param color Base Color
-	 * @param segments Number of shades
-	 */
-	public static shades(color: Color, segments: number) {
-		const size = 100 / (segments + 2);
-		const [h, s, _] = color.hsl();
-		return Array(segments)
-			.fill(0)
-			.map((_, i) => {
-				const l = (i + 2) * size;
-				return Color.fromHSL(h, s, l);
-			});
-	}
-
-	/**
 	 * Creates Color Shades by applying base color shades
 	 * @param color Base Color
 	 * @param lighter Amount of lighter shades
 	 * @param darker Amount of darker shades
 	 */
-	public static shade(color: Color, lighter: number, darker: number) {
+	public static shades(color: Color, lighter: number, darker: number) {
 		const [h, s, l] = color.hsl();
 		const stepsLight = (90 - l) / lighter;
 		const stepsDark = (l - 10) / (darker + 1);
