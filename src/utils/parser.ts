@@ -21,13 +21,14 @@ export function parser(config: UserConfig): Configuration {
 	};
 	for (let key in baseColors) {
 		const color = Color.fromCSS(baseColors[key]);
-		const shades: ColorShades = Color.shades(color, 5, 4)
+		const shades = Color.shades(color, 5, 4)
 			.reverse()
 			.map((color, i) => ({
 				[i == 0 ? 50 : i * 100]: color,
 			}))
 			.reduce((a, b) => ({ ...a, ...b }));
-		themeColors[key] = shades;
+		shades["DEFAULT"] = shades[500];
+		themeColors[key] = shades as ColorShades;
 	}
 
 	return {

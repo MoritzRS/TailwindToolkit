@@ -129,6 +129,13 @@ export class Color {
 	}
 
 	/**
+	 * Returns css color
+	 */
+	public css(): string {
+		return `hsl(${this.hue} ${this.saturation}% ${this.lightness}%)`;
+	}
+
+	/**
 	 * Returns colors HSL values.
 	 */
 	public hsl(): [number, number, number] {
