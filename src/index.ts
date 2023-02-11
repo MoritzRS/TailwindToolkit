@@ -16,6 +16,9 @@ module.exports = function (options: UserConfig) {
 			addComponents(buttonGroups(config));
 		},
 		{
+			corePlugins: {
+				boxShadowColor: false,
+			},
 			theme: {
 				extend: {
 					screens: themeScreens(),
