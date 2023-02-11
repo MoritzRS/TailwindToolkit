@@ -74,6 +74,15 @@
 		<button disabled class="button button-outlined-warning">Warning</button>
 		<button disabled class="button button-outlined-error">Error</button>
 	</div>
+
+	<hr class="my-4" />
+
+	<div class="flex flex-wrap gap-4">
+		<button class="button button-sm button-basis">Basis</button>
+		<button class="button button-md button-basis">Basis</button>
+		<button class="button button-lg button-basis">Basis</button>
+		<button class="button button-xl button-basis">Basis</button>
+	</div>
 </template>
 
 <style lang="scss">

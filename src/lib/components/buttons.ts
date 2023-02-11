@@ -13,6 +13,7 @@ export function buttons(config: Configuration) {
 			padding: "8px 16px",
 			fontWeight: "700",
 			transition: "all .15s ease-in-out",
+			alignSelf: "baseline",
 
 			"&:not(:disabled)": {
 				"&:active:hover,&:active:focus": {
@@ -29,6 +30,26 @@ export function buttons(config: Configuration) {
 				opacity: "0.5",
 				cursor: "not-allowed",
 			},
+		},
+
+		/**
+		 * Size Modifiers
+		 */
+		".button-sm": {
+			padding: "4px 8px",
+			fontSize: "14px",
+		},
+
+		".button-md": {
+			padding: "8px 16px",
+		},
+
+		".button-lg": {
+			padding: "12px 24px",
+		},
+
+		".button-xl": {
+			padding: "16px 32px",
 		},
 
 		/**
