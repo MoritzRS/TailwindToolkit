@@ -47,7 +47,7 @@
 	<form on:submit|preventDefault={submit} class="relative">
 		<input
 			type="search"
-			class="z-0 w-full rounded-3xl border-0"
+			class="z-0 w-full rounded-3xl border-0 px-4 py-2"
 			placeholder="Search (Ctrl+K)"
 			bind:this={inputField}
 			bind:value={searchString}
@@ -56,7 +56,7 @@
 		{#if results.length}
 			<div
 				transition:fade={{ duration: 100 }}
-				class="absolute top-full left-0 -z-10 -mt-4 flex w-full flex-col overflow-hidden rounded-b-3xl pt-4 shadow-md"
+				class="absolute top-full left-0 -z-10 my-1 flex w-full flex-col overflow-hidden rounded bg-white p-2 shadow-md"
 			>
 				{#each results as { name, href }, i}
 					<a {href} on:click={() => (searchString = "")}>{name}</a>
