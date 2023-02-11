@@ -6,7 +6,6 @@
 	<Headline>Buttons</Headline>
 
 	<div class="flex flex-wrap gap-4">
-		<button class="button">Default</button>
 		<button class="button button-basis">Basis</button>
 		<button class="button button-primary">Primary</button>
 		<button class="button button-secondary">Secondary</button>
@@ -17,7 +16,7 @@
 		<button class="button button-error">Error</button>
 	</div>
 
-	<hr class="my-4"/>
+	<hr class="my-4" />
 
 	<div class="flex flex-wrap gap-4">
 		<button class="button button-soft-basis">Basis</button>
@@ -30,7 +29,7 @@
 		<button class="button button-soft-error">Error</button>
 	</div>
 
-	<hr class="my-4"/>
+	<hr class="my-4" />
 
 	<div class="flex flex-wrap gap-4">
 		<button class="button button-outlined-basis">Basis</button>
