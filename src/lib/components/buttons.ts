@@ -14,13 +14,20 @@ export function buttons(config: Configuration) {
 			fontWeight: "700",
 			transition: "all .15s ease-in-out",
 
-			"&:active:hover,&:active:focus": {
-				transform: "scale(0.95)",
+			"&:not(:disabled)": {
+				"&:active:hover,&:active:focus": {
+					transform: "scale(0.95)",
+				},
 			},
 
 			"&:focus-visible": {
 				outlineOffset: "2px",
 				outline: "2px solid black",
+			},
+
+			"&:disabled": {
+				opacity: "0.5",
+				cursor: "not-allowed",
 			},
 		},
 
@@ -49,6 +56,10 @@ export function buttons(config: Configuration) {
 						borderColor: softBase.css(),
 						backgroundColor: softBase.css(),
 						color: softForeground.css(),
+
+						"&:focus-visible": {
+							outlineColor: shades[500].css(),
+						},
 					},
 
 					[`.button-outlined-${color}`]: {
@@ -56,9 +67,13 @@ export function buttons(config: Configuration) {
 						backgroundColor: "transparent",
 						color: base.css(),
 
-						"&:hover": {
+						"&:not(:disabled):hover": {
 							backgroundColor: base.css(),
 							color: foreground.css(),
+						},
+
+						"&:focus-visible": {
+							outlineColor: shades[500].css(),
 						},
 					},
 				};
