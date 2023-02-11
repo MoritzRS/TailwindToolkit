@@ -21,14 +21,17 @@ export function parser(config: UserConfig): Configuration {
 	};
 	for (let key in baseColors) {
 		const color = Color.fromCSS(baseColors[key]);
-		const shades = Color.shades(color, 5, 4)
+		const shades = Color.shades(color, 5, 4);
+		const colorShades = shades
 			.reverse()
 			.map((color, i) => ({
 				[i == 0 ? 50 : i * 100]: color,
 			}))
 			.reduce((a, b) => ({ ...a, ...b }));
-		shades["DEFAULT"] = shades[500];
-		themeColors[key] = shades as ColorShades;
+		colorShades["LIGHT"] = shades[0];
+		colorShades["DARK"] = shades[shades.length - 1];
+		colorShades["DEFAULT"] = color;
+		themeColors[key] = colorShades as ColorShades;
 	}
 
 	return {

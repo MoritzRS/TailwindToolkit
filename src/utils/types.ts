@@ -1,6 +1,11 @@
 import { Color } from "./color";
 
-export type ColorShades = { [key: number]: Color; DEFAULT: Color };
+export type ColorShades = {
+	[key: number]: Color;
+	LIGHT: Color;
+	DARK: Color;
+	DEFAULT: Color;
+};
 
 export type Configuration = {
 	colors: { [key: string]: ColorShades };

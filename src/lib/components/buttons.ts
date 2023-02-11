@@ -19,8 +19,8 @@ export function buttons(config: Configuration) {
 					const background = config.colors[color][500].css();
 					const foreground =
 						config.colors[color][500].brightness() > 0.6
-							? config.colors[color][900].css()
-							: config.colors[color][50].css();
+							? config.colors[color].DARK.css()
+							: config.colors[color].LIGHT.css();
 					return {
 						[`&-${color}`]: {
 							borderColor: background,

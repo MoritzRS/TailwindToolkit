@@ -4,6 +4,7 @@ export function themeColors(config: Configuration) {
 	const colors = {};
 	for (let color in config.colors) {
 		for (let shade in config.colors[color]) {
+			if (!parseFloat(shade)) continue;
 			const key = `${color}-${shade}`;
 			const hsl = config.colors[color][shade]
 				.hsl()
