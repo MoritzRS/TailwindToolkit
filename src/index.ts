@@ -6,12 +6,14 @@ import { themeShadows } from "./lib/theme/shadows";
 import { themeSpacings } from "./lib/theme/spacings";
 import { themeScreens } from "./lib/theme/screens";
 import { buttons } from "./lib/components/buttons";
+import { buttonGroups } from "./lib/components/button-groups";
 
 module.exports = function (options: UserConfig) {
 	const config = parser(options);
 	return plugin(
 		function ({ addBase, addComponents, addUtilities }) {
 			addComponents(buttons(config));
+			addComponents(buttonGroups(config));
 		},
 		{
 			theme: {
