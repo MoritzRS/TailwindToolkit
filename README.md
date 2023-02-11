@@ -6,14 +6,14 @@ No JavaScript needed, usable with virtually any Framework.
 ## Features
 
 -   [ ] Themes
-    -   [ ] Colors
+    -   [x] Colors
     -   [ ] Typography
     -   [ ] Special Values
 -   [ ] Alerts
 -   [ ] Badges
 -   [ ] Breadcrumbs
 -   [ ] Button Groups
--   [ ] Buttons
+-   [x] Buttons
 -   [ ] Cards
 -   [ ] Checkboxes
 -   [ ] Chips
@@ -21,6 +21,7 @@ No JavaScript needed, usable with virtually any Framework.
 -   [ ] Dividers
 -   [ ] Expandables
 -   [ ] File Upload
+-   [ ] Info
 -   [ ] Inputs
 -   [ ] Keyboards
 -   [ ] Links
