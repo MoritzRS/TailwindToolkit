@@ -15,7 +15,7 @@ No JavaScript needed, usable with virtually any Framework.
 -   [x] Button Groups
 -   [x] Buttons
 -   [ ] Cards
--   [ ] Checkboxes
+-   [x] Checkboxes
 -   [ ] Chips
 -   [ ] Dialogs
 -   [x] Dividers

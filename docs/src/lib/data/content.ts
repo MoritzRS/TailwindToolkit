@@ -47,6 +47,11 @@ export const content: Category[] = [
 				tags: ["button", "group"],
 			},
 			{
+				name: "Checkboxes",
+				href: "/components/checkboxes",
+				tags: ["select", "check", "box"],
+			},
+			{
 				name: "Dividers",
 				href: "/components/dividers",
 				tags: ["divid", "space", "line"],
