@@ -8,6 +8,7 @@ import { themeScreens } from "./lib/theme/screens";
 import { buttons } from "./lib/components/buttons";
 import { buttonGroups } from "./lib/components/button-groups";
 import { dividers } from "./lib/components/dividers";
+import { infos } from "./lib/components/infos";
 
 module.exports = function (options: UserConfig) {
 	const config = parser(options);
@@ -16,6 +17,7 @@ module.exports = function (options: UserConfig) {
 			addComponents(buttons(config));
 			addComponents(buttonGroups(config));
 			addComponents(dividers(config));
+			addComponents(infos(config));
 		},
 		{
 			corePlugins: {

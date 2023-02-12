@@ -51,6 +51,11 @@ export const content: Category[] = [
 				href: "/components/dividers",
 				tags: ["divid", "space", "line"],
 			},
+			{
+				name: "Infos",
+				href: "/components/infos",
+				tags: ["info", "messag", "notif"],
+			},
 		],
 	},
 ];

@@ -21,7 +21,7 @@ No JavaScript needed, usable with virtually any Framework.
 -   [x] Dividers
 -   [ ] Expandables
 -   [ ] File Upload
--   [ ] Info
+-   [x] Info
 -   [ ] Inputs
 -   [ ] Keyboards
 -   [ ] Links
