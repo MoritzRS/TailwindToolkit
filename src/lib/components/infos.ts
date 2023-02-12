@@ -9,10 +9,10 @@ export function infos(config: Configuration) {
 			justifyContent: "space-between",
 			padding: "16px",
 			margin: "4px",
-			border: `1px solid ${config.colors["basis"].DEFAULT.css()}`,
+			border: `1px solid ${config.colors.basis.DEFAULT.css()}`,
 			borderLeftWidth: "12px",
 			borderRadius: "0 4px 4px 0",
-			backgroundColor: config.colors["basis"].LIGHT.css(),
+			backgroundColor: config.colors.basis.LIGHT.css(),
 		},
 
 		...Object.keys(config.colors)

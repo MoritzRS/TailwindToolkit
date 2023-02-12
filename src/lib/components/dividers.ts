@@ -10,7 +10,7 @@ export function dividers(config: Configuration) {
 			alignSelf: "stretch",
 			whiteSpace: "nowrap",
 			border: "none",
-			color: config.colors["basis"].DEFAULT.css(),
+			color: config.colors.basis.DEFAULT.css(),
 
 			"&:not(:empty)": {
 				gap: "16px",

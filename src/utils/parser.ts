@@ -35,6 +35,6 @@ export function parser(config: UserConfig): Configuration {
 	}
 
 	return {
-		colors: themeColors,
+		colors: themeColors as any,
 	};
 }

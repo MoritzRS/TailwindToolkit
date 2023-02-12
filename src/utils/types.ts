@@ -8,7 +8,17 @@ export type ColorShades = {
 };
 
 export type Configuration = {
-	colors: { [key: string]: ColorShades };
+	colors: {
+		basis: ColorShades;
+		primary: ColorShades;
+		secondary: ColorShades;
+		accent: ColorShades;
+		info: ColorShades;
+		success: ColorShades;
+		warning: ColorShades;
+		error: ColorShades;
+		[key: string]: ColorShades;
+	};
 };
 
 export type UserConfig = {
