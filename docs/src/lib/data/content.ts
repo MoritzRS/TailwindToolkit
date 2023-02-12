@@ -46,6 +46,11 @@ export const content: Category[] = [
 				href: "/components/buttongroups",
 				tags: ["button", "group"],
 			},
+			{
+				name: "Dividers",
+				href: "/components/dividers",
+				tags: ["divid", "space", "line"],
+			},
 		],
 	},
 ];

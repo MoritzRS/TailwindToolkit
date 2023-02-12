@@ -18,7 +18,7 @@ No JavaScript needed, usable with virtually any Framework.
 -   [ ] Checkboxes
 -   [ ] Chips
 -   [ ] Dialogs
--   [ ] Dividers
+-   [x] Dividers
 -   [ ] Expandables
 -   [ ] File Upload
 -   [ ] Info
