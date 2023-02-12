@@ -12,7 +12,7 @@ No JavaScript needed, usable with virtually any Framework.
 -   [ ] Alerts
 -   [ ] Badges
 -   [ ] Breadcrumbs
--   [ ] Button Groups
+-   [x] Button Groups
 -   [x] Buttons
 -   [ ] Cards
 -   [ ] Checkboxes
