@@ -9,6 +9,8 @@ export function buttons(config: Configuration) {
 			border: `1px solid transparent`,
 			borderRadius: "4px",
 			display: "flex",
+			alignItems: "center",
+			justifyContent: "center",
 			gap: "2px",
 			padding: "8px 16px",
 			fontWeight: "700",

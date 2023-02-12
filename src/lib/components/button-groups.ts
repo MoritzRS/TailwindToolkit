@@ -4,6 +4,13 @@ export function buttonGroups(config: Configuration) {
 	return {
 		".button-group": {
 			display: "flex",
+			alignItems: "stretch",
+			justifyContent: "center",
+
+			"& *": {
+				flex: "1",
+				alignSelf: "stretch",
+			},
 
 			"& *:not(:first-child):not(:last-child)": {
 				borderRadius: "0",
