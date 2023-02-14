@@ -29,12 +29,12 @@ No JavaScript needed, usable with virtually any Framework.
 -   [ ] Loading Spinners
 -   [ ] Placeholder
 -   [ ] Progress bars
--   [ ] Radio Buttons
+-   [x] Radio Buttons
 -   [ ] Selects
 -   [ ] Sliders
 -   [ ] Steps
 -   [ ] Switches
 -   [ ] Tables
 -   [ ] Tabs
--   [ ] Toggles
+-   [x] Toggles
 -   [ ] Tooltips
