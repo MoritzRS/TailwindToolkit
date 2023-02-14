@@ -31,26 +31,14 @@ export function checkboxes(config: Configuration) {
 		/**
 		 * Size Variations
 		 */
-		".checkbox-xs": {
-			width: "16px",
-			height: "16px",
-		},
-		".checkbox-sm": {
-			width: "20px",
-			height: "20px",
-		},
-		".checkbox-md": {
-			width: "24px",
-			height: "24px",
-		},
-		".checkbox-lg": {
-			width: "28px",
-			height: "28px",
-		},
-		".checkbox-xl": {
-			width: "32px",
-			height: "32px",
-		},
+		...["xs", "sm", "md", "lg", "xl"]
+			.map((size, i) => ({
+				[`.checkbox-${size}`]: {
+					height: `${16 + 4 * i}px`,
+					width: `${16 + 4 * i}px`,
+				},
+			}))
+			.reduce((a, b) => ({ ...a, ...b })),
 
 		/**
 		 * Color variations

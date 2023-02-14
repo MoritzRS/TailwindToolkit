@@ -43,27 +43,14 @@ export function radios(config: Configuration) {
 		/**
 		 * Size Variations
 		 */
-
-		".radio-xs": {
-			width: "16px",
-			height: "16px",
-		},
-		".radio-sm": {
-			width: "20px",
-			height: "20px",
-		},
-		".radio-md": {
-			width: "24px",
-			height: "24px",
-		},
-		".radio-lg": {
-			width: "28px",
-			height: "28px",
-		},
-		".radio-xl": {
-			width: "32px",
-			height: "32px",
-		},
+		...["xs", "sm", "md", "lg", "xl"]
+			.map((size, i) => ({
+				[`.radio-${size}`]: {
+					height: `${16 + 4 * i}px`,
+					width: `${16 + 4 * i}px`,
+				},
+			}))
+			.reduce((a, b) => ({ ...a, ...b })),
 
 		/**
 		 * Color variations
