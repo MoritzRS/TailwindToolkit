@@ -32,6 +32,7 @@
 	<hr class="my-4" />
 
 	<div class="flex gap-4">
+		<input type="checkbox" class="checkbox checkbox-xs checkbox-basis" checked />
 		<input type="checkbox" class="checkbox checkbox-sm checkbox-basis" checked />
 		<input type="checkbox" class="checkbox checkbox-md checkbox-basis" checked />
 		<input type="checkbox" class="checkbox checkbox-lg checkbox-basis" checked />

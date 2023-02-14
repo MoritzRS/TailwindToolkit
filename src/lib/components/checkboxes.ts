@@ -4,8 +4,8 @@ export function checkboxes(config: Configuration) {
 	return {
 		".checkbox": {
 			appearance: "none",
-			width: "20px",
-			height: "20px",
+			width: "24px",
+			height: "24px",
 			flexShrink: "0",
 			borderRadius: "4px",
 			border: `2px solid ${config.colors.basis.DEFAULT.css()}`,
@@ -31,21 +31,25 @@ export function checkboxes(config: Configuration) {
 		/**
 		 * Size Variations
 		 */
-		".checkbox-sm": {
+		".checkbox-xs": {
 			width: "16px",
 			height: "16px",
 		},
-		".checkbox-md": {
+		".checkbox-sm": {
 			width: "20px",
 			height: "20px",
 		},
-		".checkbox-lg": {
+		".checkbox-md": {
 			width: "24px",
 			height: "24px",
 		},
-		".checkbox-xl": {
+		".checkbox-lg": {
 			width: "28px",
 			height: "28px",
+		},
+		".checkbox-xl": {
+			width: "32px",
+			height: "32px",
 		},
 
 		/**

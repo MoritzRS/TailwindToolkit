@@ -19,6 +19,7 @@
 	<hr class="my-4" />
 
 	<div class="flex gap-4">
+		<input type="radio" name="radio" class="radio radio-xs" />
 		<input type="radio" name="radio" class="radio radio-sm" />
 		<input type="radio" name="radio" class="radio radio-md" />
 		<input type="radio" name="radio" class="radio radio-lg" />

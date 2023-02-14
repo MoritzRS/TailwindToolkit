@@ -4,8 +4,8 @@ export function radios(config: Configuration) {
 	return {
 		".radio": {
 			appearance: "none",
-			width: "20px",
-			height: "20px",
+			width: "24px",
+			height: "24px",
 			flexShrink: "0",
 			border: `2px solid ${config.colors.basis.DEFAULT.css()}`,
 			borderRadius: "99999999px",
@@ -44,21 +44,25 @@ export function radios(config: Configuration) {
 		 * Size Variations
 		 */
 
-		".radio-sm": {
+		".radio-xs": {
 			width: "16px",
 			height: "16px",
 		},
-		".radio-md": {
+		".radio-sm": {
 			width: "20px",
 			height: "20px",
 		},
-		".radio-lg": {
+		".radio-md": {
 			width: "24px",
 			height: "24px",
 		},
-		".radio-xl": {
+		".radio-lg": {
 			width: "28px",
 			height: "28px",
+		},
+		".radio-xl": {
+			width: "32px",
+			height: "32px",
 		},
 
 		/**
