@@ -12,11 +12,13 @@ import { infos } from "./lib/components/infos";
 import { checkboxes } from "./lib/components/checkboxes";
 import { radios } from "./lib/components/radios";
 import { toggles } from "./lib/components/toggles";
+import { badges } from "./lib/components/badges";
 
 module.exports = function (options: UserConfig) {
 	const config = parser(options);
 	return plugin(
 		function ({ addBase, addComponents, addUtilities }) {
+			addComponents(badges(config));
 			addComponents(buttons(config));
 			addComponents(buttonGroups(config));
 			addComponents(checkboxes(config));

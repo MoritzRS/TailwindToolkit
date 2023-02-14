@@ -37,6 +37,11 @@ export const content: Category[] = [
 		name: "Components",
 		pages: [
 			{
+				name: "Badges",
+				href: "/components/badges",
+				tags: ["badge", "info", "chip"],
+			},
+			{
 				name: "Buttons",
 				href: "/components/buttons",
 				tags: ["button"],
