@@ -15,6 +15,15 @@
 		<input type="radio" name="radio" class="radio radio-warning" />
 		<input type="radio" name="radio" class="radio radio-error" />
 	</div>
+
+	<hr class="my-4" />
+
+	<div class="flex gap-4">
+		<input type="radio" name="radio" class="radio radio-sm" />
+		<input type="radio" name="radio" class="radio radio-md" />
+		<input type="radio" name="radio" class="radio radio-lg" />
+		<input type="radio" name="radio" class="radio radio-xl" />
+	</div>
 </template>
 
 <style lang="scss"></style>

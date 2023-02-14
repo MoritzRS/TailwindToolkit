@@ -10,7 +10,18 @@ export function radios(config: Configuration) {
 			border: `2px solid ${config.colors.basis.DEFAULT.css()}`,
 			borderRadius: "99999999px",
 			cursor: "pointer",
-			transition: "background, box-shadow .2s ease-in-out",
+			position: "relative",
+
+			"&:before": {
+				content: "''",
+				position: "absolute",
+				inset: "0",
+				margin: "3px",
+				borderRadius: "inherit",
+				backgroundColor: config.colors.basis.DEFAULT.css(),
+				transform: "scale(0)",
+				transition: "transform .15s ease-in-out",
+			},
 
 			"&:focus-visible": {
 				outlineOffset: "2px",
@@ -18,17 +29,43 @@ export function radios(config: Configuration) {
 			},
 
 			"&:checked": {
-				backgroundColor: config.colors.basis.DEFAULT.css(),
+				"&:before": {
+					transform: "scale(1)",
+				},
 			},
 		},
 
+		/**
+		 * Size Variations
+		 */
+
+		".radio-sm": {
+			width: "16px",
+			height: "16px",
+		},
+		".radio-md": {
+			width: "20px",
+			height: "20px",
+		},
+		".radio-lg": {
+			width: "24px",
+			height: "24px",
+		},
+		".radio-xl": {
+			width: "28px",
+			height: "28px",
+		},
+
+		/**
+		 * Color variations
+		 */
 		...Object.keys(config.colors)
 			.map((color) => {
 				return {
 					[`.radio-${color}`]: {
 						borderColor: config.colors[color].DEFAULT.css(),
 
-						"&:checked": {
+						"&:before": {
 							backgroundColor: config.colors[color].DEFAULT.css(),
 						},
 					},
