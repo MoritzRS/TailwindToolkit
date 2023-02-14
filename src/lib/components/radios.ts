@@ -33,6 +33,11 @@ export function radios(config: Configuration) {
 					transform: "scale(1)",
 				},
 			},
+
+			"&:disabled": {
+				opacity: "0.5",
+				cursor: "not-allowed",
+			},
 		},
 
 		/**
