@@ -11,6 +11,7 @@ import { dividers } from "./lib/components/dividers";
 import { infos } from "./lib/components/infos";
 import { checkboxes } from "./lib/components/checkboxes";
 import { radios } from "./lib/components/radios";
+import { toggles } from "./lib/components/toggles";
 
 module.exports = function (options: UserConfig) {
 	const config = parser(options);
@@ -22,6 +23,7 @@ module.exports = function (options: UserConfig) {
 			addComponents(dividers(config));
 			addComponents(infos(config));
 			addComponents(radios(config));
+			addComponents(toggles(config));
 		},
 		{
 			corePlugins: {

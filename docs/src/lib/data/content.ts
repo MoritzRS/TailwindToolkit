@@ -66,6 +66,11 @@ export const content: Category[] = [
 				href: "/components/radios",
 				tags: ["radio", "button", "select"],
 			},
+			{
+				name: "Toggles",
+				href: "/components/toggles",
+				tags: ["toggl", "switch", "check", "select"],
+			},
 		],
 	},
 ];
