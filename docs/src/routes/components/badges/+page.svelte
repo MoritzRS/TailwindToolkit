@@ -6,7 +6,6 @@
 	<Headline>Badges</Headline>
 
 	<div class="flex gap-4">
-		<button class="button button-basis">Button</button>
 		<span class="badge badge-basis">Base</span>
 		<span class="badge badge-primary">Primary</span>
 		<span class="badge badge-secondary">Secondary</span>
