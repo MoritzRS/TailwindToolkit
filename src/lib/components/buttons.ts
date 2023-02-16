@@ -20,6 +20,7 @@ export function buttons(config: Configuration) {
 			fontWeight: "700",
 			transition: "all .15s ease-in-out",
 			alignSelf: "baseline",
+			fontSize: "16px",
 
 			"&:not(:disabled)": {
 				"&:active:hover,&:active:focus": {
@@ -41,22 +42,14 @@ export function buttons(config: Configuration) {
 		/**
 		 * Size Modifiers
 		 */
-		".button-sm": {
-			padding: "4px 8px",
-			fontSize: "14px",
-		},
-
-		".button-md": {
-			padding: "8px 16px",
-		},
-
-		".button-lg": {
-			padding: "12px 24px",
-		},
-
-		".button-xl": {
-			padding: "16px 32px",
-		},
+		...["sm", "md", "lg", "xl"]
+			.map((size, index) => ({
+				[`.button-${size}`]: {
+					padding: `${4 * (index + 1)}px ${8 * (index + 1)}px`,
+					fontSize: `${index < 1 ? 14 : index > 2 ? 18 : 16}px`,
+				},
+			}))
+			.reduce((a, b) => ({ ...a, ...b })),
 
 		/**
 		 * Colors and Variations
