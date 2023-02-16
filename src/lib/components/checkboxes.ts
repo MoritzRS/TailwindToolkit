@@ -47,7 +47,7 @@ export function checkboxes(config: Configuration) {
 			.map((color) => {
 				const shades = config.colors[color];
 				const background = shades.DEFAULT;
-				const foreground = background.brightness() > 0.6 ? shades.DARK : shades.LIGHT;
+				const foreground = background.isDark() ? shades.LIGHT : shades.DARK;
 				return {
 					[`.checkbox-${color}`]: {
 						borderColor: background.css(),
