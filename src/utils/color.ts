@@ -129,6 +129,13 @@ export class Color {
 	}
 
 	/**
+	 * Check if a color is dark
+	 */
+	public isDark(): boolean {
+		return this.brightness() < 0.6;
+	}
+
+	/**
 	 * Returns css color
 	 */
 	public css(): string {
