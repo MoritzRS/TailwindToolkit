@@ -7,7 +7,7 @@ export function inputs(config: Configuration) {
 			alignSelf: "baseline",
 			fontSize: "16px",
 			padding: "8px 16px",
-			border: `2px solid ${config.colors.basis.DEFAULT.css()}`,
+			border: `1px solid ${config.colors.basis.DEFAULT.css()}`,
 			borderRadius: "4px",
 			transition: "border .15s ease-in-out",
 
