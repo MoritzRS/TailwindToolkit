@@ -57,6 +57,11 @@ export const content: Category[] = [
 				tags: ["select", "check", "box"],
 			},
 			{
+				name: "Chips",
+				href: "/components/chips",
+				tags: ["chip", "info", "badge"],
+			},
+			{
 				name: "Dividers",
 				href: "/components/dividers",
 				tags: ["divid", "space", "line"],

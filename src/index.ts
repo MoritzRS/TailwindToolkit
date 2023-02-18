@@ -13,6 +13,7 @@ import { checkboxes } from "./lib/components/checkboxes";
 import { radios } from "./lib/components/radios";
 import { toggles } from "./lib/components/toggles";
 import { badges } from "./lib/components/badges";
+import { chips } from "./lib/components/chips";
 
 module.exports = function (options: UserConfig) {
 	const config = parser(options);
@@ -22,6 +23,7 @@ module.exports = function (options: UserConfig) {
 			addComponents(buttons(config));
 			addComponents(buttonGroups(config));
 			addComponents(checkboxes(config));
+			addComponents(chips(config));
 			addComponents(dividers(config));
 			addComponents(infos(config));
 			addComponents(radios(config));
