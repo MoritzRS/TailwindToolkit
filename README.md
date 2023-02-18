@@ -22,6 +22,7 @@ No JavaScript needed, usable with virtually any Framework.
 -   [ ] Expandables
 -   [ ] File Upload
 -   [x] Info
+-   [x] Input groups
 -   [x] Inputs
 -   [ ] Keyboards
 -   [ ] Links
