@@ -10,7 +10,7 @@ No JavaScript needed, usable with virtually any Framework.
     -   [ ] Typography
     -   [ ] Special Values
 -   [ ] Alerts
--   [ ] Badges
+-   [x] Badges
 -   [ ] Breadcrumbs
 -   [x] Button Groups
 -   [x] Buttons
