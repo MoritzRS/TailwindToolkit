@@ -14,6 +14,7 @@ import { radios } from "./lib/components/radios";
 import { toggles } from "./lib/components/toggles";
 import { badges } from "./lib/components/badges";
 import { chips } from "./lib/components/chips";
+import { inputs } from "./lib/components/inputs";
 
 module.exports = function (options: UserConfig) {
 	const config = parser(options);
@@ -26,6 +27,7 @@ module.exports = function (options: UserConfig) {
 			addComponents(chips(config));
 			addComponents(dividers(config));
 			addComponents(infos(config));
+			addComponents(inputs(config));
 			addComponents(radios(config));
 			addComponents(toggles(config));
 		},

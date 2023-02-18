@@ -72,6 +72,11 @@ export const content: Category[] = [
 				tags: ["info", "messag", "notif"],
 			},
 			{
+				name: "Inputs",
+				href: "/components/inputs",
+				tags: ["input", "field", "text", "form"],
+			},
+			{
 				name: "Radios",
 				href: "/components/radios",
 				tags: ["radio", "button", "select"],

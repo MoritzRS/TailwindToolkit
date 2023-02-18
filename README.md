@@ -22,7 +22,7 @@ No JavaScript needed, usable with virtually any Framework.
 -   [ ] Expandables
 -   [ ] File Upload
 -   [x] Info
--   [ ] Inputs
+-   [x] Inputs
 -   [ ] Keyboards
 -   [ ] Links
 -   [ ] Lists
