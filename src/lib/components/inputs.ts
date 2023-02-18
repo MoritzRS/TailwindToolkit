@@ -8,6 +8,7 @@ export function inputs(config: Configuration) {
 			fontSize: "16px",
 			padding: "8px 16px",
 			border: `1px solid ${config.colors.basis.DEFAULT.css()}`,
+			backgroundColor: "transparent",
 			borderRadius: "4px",
 			transition: "border .15s ease-in-out",
 
