@@ -33,7 +33,7 @@ No JavaScript needed, usable with virtually any Framework.
 -   [x] Radio Buttons
 -   [ ] Selects
 -   [ ] Sliders
--   [ ] Steps
+-   [x] Steps
 -   [ ] Switches
 -   [ ] Tables
 -   [ ] Tabs
