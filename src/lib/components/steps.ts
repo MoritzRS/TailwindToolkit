@@ -11,11 +11,6 @@ export function steps(config: Configuration) {
 			overflowX: "auto",
 		},
 
-		".steps-vertical": {
-			gridAutoRows: "1fr",
-			gridAutoFlow: "row",
-		},
-
 		".step": {
 			display: "grid",
 			gridTemplateColumns: "auto",
@@ -24,15 +19,18 @@ export function steps(config: Configuration) {
 			textAlign: "center",
 			minWidth: "4rem",
 
-			"&:not(:first-child):before": {
+			"&:before": {
 				content: "''",
 				gridColumnStart: "1",
 				gridRowStart: "1",
 				height: "0.5rem",
 				width: "100%",
-				transform: "scale(1)",
 				marginLeft: "-100%",
 				backgroundColor: config.colors.basis.DEFAULT.css(),
+			},
+
+			"&:first-child:before": {
+				content: "none",
 			},
 
 			"&:after": {
@@ -62,7 +60,7 @@ export function steps(config: Configuration) {
 		...Object.keys(config.colors)
 			.map((color) => ({
 				[`.step-${color}`]: {
-					"&:not(:first-child):before": {
+					"& + &:before": {
 						backgroundColor: config.colors[color].DEFAULT.css(),
 					},
 
@@ -75,5 +73,26 @@ export function steps(config: Configuration) {
 				},
 			}))
 			.reduce((a, b) => ({ ...a, ...b })),
+
+		".steps-vertical": {
+			gridAutoRows: "1fr",
+			gridAutoFlow: "row",
+
+			".step": {
+				display: "grid",
+				gap: "0.5rem",
+				gridTemplateColumns: "40px 1fr",
+				gridTemplateRows: "auto",
+				minHeight: "4rem",
+				justifyItems: "start",
+
+				"&:before": {
+					height: "100%",
+					width: "0.5rem",
+					transform: "translate(-50%, -50%)",
+					marginLeft: "50%",
+				},
+			},
+		},
 	};
 }
