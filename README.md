@@ -36,6 +36,6 @@ No JavaScript needed, usable with virtually any Framework.
 -   [x] Steps
 -   [ ] Switches
 -   [ ] Tables
--   [ ] Tabs
+-   [x] Tabs
 -   [x] Toggles
 -   [ ] Tooltips

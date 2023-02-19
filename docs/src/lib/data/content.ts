@@ -92,6 +92,11 @@ export const content: Category[] = [
 				tags: ["step", "progress"],
 			},
 			{
+				name: "Tabs",
+				href: "/components/tabs",
+				tags: ["tab", "link", "nav"],
+			},
+			{
 				name: "Toggles",
 				href: "/components/toggles",
 				tags: ["toggl", "switch", "check", "select"],
