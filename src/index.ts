@@ -16,6 +16,7 @@ import { badges } from "./lib/components/badges";
 import { chips } from "./lib/components/chips";
 import { inputs } from "./lib/components/inputs";
 import { inputGroups } from "./lib/components/input-groups";
+import { steps } from "./lib/components/steps";
 
 module.exports = function (options: UserConfig) {
 	const config = parser(options);
@@ -31,6 +32,7 @@ module.exports = function (options: UserConfig) {
 			addComponents(inputs(config));
 			addComponents(inputGroups(config));
 			addComponents(radios(config));
+			addComponents(steps(config));
 			addComponents(toggles(config));
 		},
 		{
