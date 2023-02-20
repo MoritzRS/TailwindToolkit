@@ -34,7 +34,6 @@ No JavaScript needed, usable with virtually any Framework.
 -   [x] Selects
 -   [ ] Sliders
 -   [x] Steps
--   [ ] Switches
 -   [ ] Tables
 -   [x] Tabs
 -   [x] Toggles
