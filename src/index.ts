@@ -1,23 +1,24 @@
 import * as plugin from "tailwindcss/plugin";
-import { parser } from "./utils/parser";
-import { themeColors } from "./lib/theme/colors";
 import { UserConfig } from "./utils/types";
-import { themeShadows } from "./lib/theme/shadows";
-import { themeSpacings } from "./lib/theme/spacings";
-import { themeScreens } from "./lib/theme/screens";
-import { buttons } from "./lib/components/buttons";
+import { badges } from "./lib/components/badges";
 import { buttonGroups } from "./lib/components/button-groups";
+import { buttons } from "./lib/components/buttons";
+import { checkboxes } from "./lib/components/checkboxes";
+import { chips } from "./lib/components/chips";
 import { dividers } from "./lib/components/dividers";
 import { infos } from "./lib/components/infos";
-import { checkboxes } from "./lib/components/checkboxes";
-import { radios } from "./lib/components/radios";
-import { toggles } from "./lib/components/toggles";
-import { badges } from "./lib/components/badges";
-import { chips } from "./lib/components/chips";
-import { inputs } from "./lib/components/inputs";
 import { inputGroups } from "./lib/components/input-groups";
+import { inputs } from "./lib/components/inputs";
+import { parser } from "./utils/parser";
+import { radios } from "./lib/components/radios";
+import { selects } from "./lib/components/selects";
 import { steps } from "./lib/components/steps";
 import { tabs } from "./lib/components/tabs";
+import { themeColors } from "./lib/theme/colors";
+import { themeScreens } from "./lib/theme/screens";
+import { themeShadows } from "./lib/theme/shadows";
+import { themeSpacings } from "./lib/theme/spacings";
+import { toggles } from "./lib/components/toggles";
 
 module.exports = function (options: UserConfig) {
 	const config = parser(options);
@@ -33,6 +34,7 @@ module.exports = function (options: UserConfig) {
 			addComponents(inputs(config));
 			addComponents(inputGroups(config));
 			addComponents(radios(config));
+			addComponents(selects(config));
 			addComponents(steps(config));
 			addComponents(tabs(config));
 			addComponents(toggles(config));
