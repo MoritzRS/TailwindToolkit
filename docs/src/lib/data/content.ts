@@ -87,6 +87,11 @@ export const content: Category[] = [
 				tags: ["radio", "button", "select"],
 			},
 			{
+				name: "Ranges",
+				href: "/components/ranges",
+				tags: ["range", "slid"],
+			},
+			{
 				name: "Selects",
 				href: "/components/selects",
 				tags: ["select", "choose", "choice"],

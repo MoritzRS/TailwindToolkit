@@ -31,8 +31,8 @@ No JavaScript needed, usable with virtually any Framework.
 -   [ ] Placeholder
 -   [ ] Progress bars
 -   [x] Radio Buttons
+-   [x] Ranges
 -   [x] Selects
--   [ ] Sliders
 -   [x] Steps
 -   [ ] Tables
 -   [x] Tabs

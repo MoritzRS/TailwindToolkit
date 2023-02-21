@@ -138,8 +138,8 @@ export class Color {
 	/**
 	 * Returns css color
 	 */
-	public css(): string {
-		return `hsl(${this.hue} ${this.saturation}% ${this.lightness}%)`;
+	public css(opacity = 1): string {
+		return `hsl(${this.hue} ${this.saturation}% ${this.lightness}% / ${opacity})`;
 	}
 
 	/**

@@ -11,6 +11,7 @@ import { inputGroups } from "./lib/components/input-groups";
 import { inputs } from "./lib/components/inputs";
 import { parser } from "./utils/parser";
 import { radios } from "./lib/components/radios";
+import { ranges } from "./lib/components/ranges";
 import { selects } from "./lib/components/selects";
 import { steps } from "./lib/components/steps";
 import { tabs } from "./lib/components/tabs";
@@ -34,6 +35,7 @@ module.exports = function (options: UserConfig) {
 			addComponents(inputs(config));
 			addComponents(inputGroups(config));
 			addComponents(radios(config));
+			addComponents(ranges(config));
 			addComponents(selects(config));
 			addComponents(steps(config));
 			addComponents(tabs(config));
