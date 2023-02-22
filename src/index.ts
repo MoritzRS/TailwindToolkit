@@ -21,6 +21,7 @@ import { themeScreens } from "./lib/theme/screens";
 import { themeShadows } from "./lib/theme/shadows";
 import { themeSpacings } from "./lib/theme/spacings";
 import { toggles } from "./lib/components/toggles";
+import { expandables } from "./lib/components/expandables";
 
 module.exports = function (options: UserConfig) {
 	const config = parser(options);
@@ -32,6 +33,7 @@ module.exports = function (options: UserConfig) {
 			addComponents(checkboxes(config));
 			addComponents(chips(config));
 			addComponents(dividers(config));
+			addComponents(expandables(config));
 			addComponents(infos(config));
 			addComponents(inputs(config));
 			addComponents(inputGroups(config));

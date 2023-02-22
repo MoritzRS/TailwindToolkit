@@ -67,6 +67,11 @@ export const content: Category[] = [
 				tags: ["divid", "space", "line"],
 			},
 			{
+				name: "Expandables",
+				href: "/components/expandables",
+				tags: ["expand", "accord"],
+			},
+			{
 				name: "Infos",
 				href: "/components/infos",
 				tags: ["info", "messag", "notif"],
