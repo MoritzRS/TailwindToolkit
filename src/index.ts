@@ -9,6 +9,7 @@ import { dividers } from "./lib/components/dividers";
 import { infos } from "./lib/components/infos";
 import { inputGroups } from "./lib/components/input-groups";
 import { inputs } from "./lib/components/inputs";
+import { links } from "./lib/components/links";
 import { parser } from "./utils/parser";
 import { radios } from "./lib/components/radios";
 import { ranges } from "./lib/components/ranges";
@@ -34,6 +35,7 @@ module.exports = function (options: UserConfig) {
 			addComponents(infos(config));
 			addComponents(inputs(config));
 			addComponents(inputGroups(config));
+			addComponents(links(config));
 			addComponents(radios(config));
 			addComponents(ranges(config));
 			addComponents(selects(config));

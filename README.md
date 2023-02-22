@@ -25,7 +25,7 @@ No JavaScript needed, usable with virtually any Framework.
 -   [x] Input groups
 -   [x] Inputs
 -   [ ] Keyboards
--   [ ] Links
+-   [x] Links
 -   [ ] Lists
 -   [ ] Loading Spinners
 -   [ ] Placeholder
