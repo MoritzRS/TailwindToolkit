@@ -5,6 +5,7 @@
 	"main": "dist/index.js",
 	"scripts": {
 		"build": "tsc",
+		"postinstall": "npm run build",
 		"dev": "tsc -w & npm run docs:dev",
 		"docs:install": "cd docs && npm install",
 		"docs:dev": "cd docs && npm run dev",
