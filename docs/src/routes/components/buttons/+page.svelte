@@ -78,6 +78,30 @@
 	<hr class="my-4" />
 
 	<div class="flex flex-wrap gap-4">
+		<button class="button button-ghost-basis">Basis</button>
+		<button class="button button-ghost-primary">Primary</button>
+		<button class="button button-ghost-secondary">Secondary</button>
+		<button class="button button-ghost-accent">Accent</button>
+		<button class="button button-ghost-info">Info</button>
+		<button class="button button-ghost-success">Success</button>
+		<button class="button button-ghost-warning">Warning</button>
+		<button class="button button-ghost-error">Error</button>
+	</div>
+	<hr class="my-1" />
+	<div class="flex flex-wrap gap-4">
+		<button disabled class="button button-ghost-basis">Basis</button>
+		<button disabled class="button button-ghost-primary">Primary</button>
+		<button disabled class="button button-ghost-secondary">Secondary</button>
+		<button disabled class="button button-ghost-accent">Accent</button>
+		<button disabled class="button button-ghost-info">Info</button>
+		<button disabled class="button button-ghost-success">Success</button>
+		<button disabled class="button button-ghost-warning">Warning</button>
+		<button disabled class="button button-ghost-error">Error</button>
+	</div>
+
+	<hr class="my-4" />
+
+	<div class="flex flex-wrap gap-4">
 		<button class="button button-sm button-basis">Basis</button>
 		<button class="button button-md button-basis">Basis</button>
 		<button class="button button-lg button-basis">Basis</button>

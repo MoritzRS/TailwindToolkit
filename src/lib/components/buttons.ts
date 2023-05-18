@@ -96,6 +96,21 @@ export function buttons(config: Configuration) {
 							outlineColor: shades[500].css(),
 						},
 					},
+
+					[`.button-ghost-${color}`]: {
+						borderColor: "transparent",
+						backgroundColor: "transparent",
+						color: "currentColor",
+
+						"&:not(:disabled):hover": {
+							backgroundColor: base.css(0.3),
+							color: "currentColor",
+						},
+
+						"&:focus-visible": {
+							outlineColor: shades[500].css(),
+						},
+					},
 				};
 			})
 			.reduce((a, b) => ({ ...a, ...b })),
