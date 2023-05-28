@@ -31,7 +31,7 @@ export const content: Category[] = [
 	},
 	{
 		name: "Utilities",
-		pages: [],
+		pages: [{ name: "Scrollbars", href: "/utils/scrollbars", tags: ["scroll", "bar"] }],
 	},
 	{
 		name: "Components",

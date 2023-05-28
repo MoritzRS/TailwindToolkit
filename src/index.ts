@@ -22,11 +22,14 @@ import { themeShadows } from "./lib/theme/shadows";
 import { themeSpacings } from "./lib/theme/spacings";
 import { toggles } from "./lib/components/toggles";
 import { expandables } from "./lib/components/expandables";
+import { scrollbar } from "./lib/utils/scrollbars";
 
 module.exports = function (options: UserConfig) {
 	const config = parser(options);
 	return plugin(
 		function ({ addBase, addComponents, addUtilities }) {
+			addUtilities(scrollbar(config));
+
 			addComponents(badges(config));
 			addComponents(buttons(config));
 			addComponents(buttonGroups(config));
